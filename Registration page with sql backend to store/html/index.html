@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&family=Sriracha&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script async defer src="../js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to NIT Kurukshetra</h2>
+        <form action="" method="post" id="form">
+            <h3>Enter your details</h3>
+            <input type="text" name="name" placeholder="NAME" class="name" id="text"><br> 
+            <input type="text" name="roll" placeholder="ROLL NUMBER" class="roll" id="text"><br>
+            <label for="TRIP TO VISIT"  class="trips">Select trip to visit: </label>
+                <select name="trip" id="Trips">
+                    <option value="A">Trip -A</option>
+                    <option value="B">Trip -B</option>
+                    <option value="C">Trip -C</option>
+            </select><br>
+
+            <span>Gender: </span>
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="male" >Male</label>
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female" >female</label><br>
+
+            <input type="text" name="email" placeholder="NIT KKR " id="text"><br>
+            <button id="reset" class="btn">Reset</button>
+            <button id="pay" class="btn">Proceed to pay</button>
+            
+        </form>
+        <!--
+            INSERT INTO `trip` (`name`, `roll`, `trip`, `gender`, `gmail`) 
+            VALUES ('khush', '11912098', 'A', 'male', 'bhutra_11912098@gmail.com'), 
+            ('ravi', '11912065', 'B', 'male', 'solanki_11912065@gmail.com');
+        -->
+        
+    </div>
+    
+</body>
+</html>
